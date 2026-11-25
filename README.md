@@ -24,8 +24,8 @@ mvn clean test -Dbrowser=firefox -Dheadless=true
 | **Extent** Spark HTML | `target/extent-reports/ExtentReport_*.html` |
 | **Screenshots** on failure | `target/screenshots/` |
 | **Allure** results | `target/allure-results/` |
-| **Allure** live UI | `mvn allure:serve` |
-| **Allure** static report | `mvn allure:report` → open `target/site/allure-maven-plugin/` |
+| **Allure** live UI | `mvn io.qameta.allure:allure-maven:${allure-maven.version}:serve` (or `mvn allure:serve` if `io.qameta.allure` is in your Maven `pluginGroups`) |
+| **Allure** static report | `mvn io.qameta.allure:allure-maven:2.15.0:report` → open `target/site/allure-maven-plugin/index.html` |
 
 ---
 

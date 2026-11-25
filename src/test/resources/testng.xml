@@ -4,7 +4,8 @@
     <listeners>
         <listener class-name="com.framework.listeners.TestListener"/>
         <listener class-name="com.framework.listeners.RetryTransformer"/>
-        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <!-- AllureTestNg is auto-registered via allure-testng SPI; do not list it here
+             or TestNG logs "Ignoring duplicate listener". -->
     </listeners>
 
     <!-- Override with -Dbrowser=firefox or suite parameter; ConfigReader also honors -Dbrowser -->
