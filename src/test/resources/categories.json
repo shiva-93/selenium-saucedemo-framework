@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Element not found",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*NoSuchElementException.*|.*ElementNotInteractableException.*|.*StaleElementReferenceException.*"
+  },
+  {
+    "name": "Assertion failures",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*AssertionError.*|.*AssertionFailedError.*|.*expected:.*"
+  },
+  {
+    "name": "Timeouts",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*TimeoutException.*|.*timed out.*|.*Timed out.*"
+  }
+]

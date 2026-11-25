@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Suite" parallel="methods" thread-count="3" verbose="1">
+    <!-- Listeners (wired in later steps):
+         com.framework.listeners.TestListener
+         com.framework.listeners.RetryAnalyzer / AnnotationTransformer
+         io.qameta.allure.testng.AllureTestNg
+    -->
+    <test name="Placeholder">
+        <classes>
+            <!-- Placeholder — real test classes added in later steps -->
+            <!-- <class name="com.tests.LoginTest"/> -->
+        </classes>
+    </test>
+</suite>
